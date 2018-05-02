@@ -1,12 +1,14 @@
 package org.roman.api.game.sprite;
 
+import org.roman.api.game.base.Drawable;
 import org.roman.api.game.base.HasSpeed;
 import org.roman.api.game.base.Movable;
+import org.roman.api.game.ui.Context;
 import org.roman.api.game.util.Coords;
 
 import java.util.Objects;
 
-public class Sprite {
+public class Sprite implements Drawable {
     protected Coords coords;
     protected int width, height;
     public Sprite(Coords coords) {
@@ -49,5 +51,10 @@ public class Sprite {
     @Override
     public int hashCode() {
         return Objects.hash(coords, width, height);
+    }
+
+    @Override
+    public void draw(Context context) {
+        throw new UnsupportedOperationException();
     }
 }
