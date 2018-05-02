@@ -1,0 +1,7 @@
+*.so
+*.iml
+*.ipr
+*.iws
+*.class
+target/*
+.idea/*

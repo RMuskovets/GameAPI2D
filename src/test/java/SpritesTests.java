@@ -1,8 +1,12 @@
+import org.junit.Ignore;
 import org.junit.Test;
-import org.roman.api.game.*;
+import org.roman.api.game.base.*;
+import org.roman.api.game.sprite.*;
+import org.roman.api.game.util.*;
 
 public class SpritesTests {
-    @Test
+
+    @Test @Ignore
     public void testSpriteClass() {
         new Sprite(new Coords(1, 1));
     }
@@ -22,7 +26,7 @@ public class SpritesTests {
         }.move();
     }
 
-    @Test
+    @Test @Ignore
     public void testHasSpeed() {
         ((HasSpeed) () -> new Speed(1, 0)).speed();
     }
@@ -39,5 +43,16 @@ public class SpritesTests {
             sprite.appendSpeed(0, 1);
             i++;
         }
+    }
+
+    @Test
+    public void testCoords() {
+        Coords x = new Coords(1, 2);
+        x.append(1, Coords.Direction.DOWN);
+    }
+
+    @Test @Ignore
+    public void testSpeed() {
+        new Speed(13, 26).getXSpeed();
     }
 }

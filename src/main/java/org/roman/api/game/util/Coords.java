@@ -1,4 +1,4 @@
-package org.roman.api.game;
+package org.roman.api.game.util;
 
 public class Coords {
     private int x, y;

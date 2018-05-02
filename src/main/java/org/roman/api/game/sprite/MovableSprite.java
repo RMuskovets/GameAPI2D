@@ -1,4 +1,8 @@
-package org.roman.api.game;
+package org.roman.api.game.sprite;
+
+import org.roman.api.game.base.Movable;
+import org.roman.api.game.util.Coords;
+import org.roman.api.game.util.Speed;
 
 public class MovableSprite extends Sprite implements Movable {
 

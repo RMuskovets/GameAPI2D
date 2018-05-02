@@ -1,4 +1,8 @@
-package org.roman.api.game;
+package org.roman.api.game.sprite;
+
+import org.roman.api.game.base.HasSpeed;
+import org.roman.api.game.base.Movable;
+import org.roman.api.game.util.Coords;
 
 public class Sprite {
     protected Coords coords;
