@@ -4,6 +4,8 @@ import org.roman.api.game.base.*;
 import org.roman.api.game.sprite.*;
 import org.roman.api.game.util.*;
 
+import java.util.Arrays;
+
 public class SpritesTests {
 
     @Test @Ignore
@@ -48,6 +50,22 @@ public class SpritesTests {
     @Test
     public void testCoords() {
         Coords x = new Coords(1, 2);
+    }
+
+    @Test
+    public void testUtil() {
+        int matrix[][] = {
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+                {13, 14, 15, 16}};
+        for (int[] row : matrix) {
+            System.out.println(Arrays.toString(row));
+        } System.out.println("=======================");
+        Util.rotateMatrix(4, matrix);
+        for (int[] row : matrix) {
+            System.out.println(Arrays.toString(row));
+        } System.out.println("=======================");
     }
 
     @Test @Ignore
