@@ -48,7 +48,6 @@ public class SpritesTests {
     @Test
     public void testCoords() {
         Coords x = new Coords(1, 2);
-        x.append(1, Coords.Direction.DOWN);
     }
 
     @Test @Ignore
