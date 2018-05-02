@@ -73,4 +73,8 @@ public class Canvas extends JPanel implements Context {
     public void fillRect(int x, int y, int x2, int y2, Color c) {
         fillRect(x, y, x2, y2, c.getRGB());
     }
+
+    public JPanel getPaint() {
+        return this;
+    }
 }

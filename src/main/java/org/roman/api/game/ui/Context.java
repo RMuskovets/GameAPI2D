@@ -1,5 +1,6 @@
 package org.roman.api.game.ui;
 
+import javax.swing.*;
 import java.awt.*;
 
 public interface Context {
@@ -10,4 +11,5 @@ public interface Context {
     void rotateSelf();
     void fillRect(int x, int y, int x2, int y2, int c);
     void fillRect(int x, int y, int x2, int y2, Color c);
+    JPanel getPaint();
 }
