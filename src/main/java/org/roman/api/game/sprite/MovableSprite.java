@@ -18,17 +18,14 @@ public class MovableSprite extends Sprite implements Movable {
 
     @Override
     public void move() {
-        coords.append(speed.getXSpeed(), Coords.Direction.RIGHT);
-        coords.append(speed.getYSpeed(), Coords.Direction.DOWN);
+//        coords.append(speed.getXSpeed(), Coords.Direction.RIGHT);
+//        coords.append(speed.getYSpeed(), Coords.Direction.DOWN);
+        speed.faster(Coords.Direction.RIGHT);
+        speed.faster(Coords.Direction.DOWN);
     }
 
     @Override
     public Speed speed() {
         return speed;
-    }
-
-    public void appendSpeed(int x, int y) {
-        speed.setXSpeed(speed.getXSpeed() + x);
-        speed.setYSpeed(speed.getYSpeed() + y);
     }
 }

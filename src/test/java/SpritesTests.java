@@ -40,7 +40,7 @@ public class SpritesTests {
             System.out.println("\n\n");
             System.out.println(sprite.getCoords().getX());
             System.out.println(sprite.getCoords().getY());
-            sprite.appendSpeed(0, 1);
+            //sprite.appendSpeed(0, 1);
             i++;
         }
     }
